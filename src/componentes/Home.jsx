@@ -1,6 +1,6 @@
 import "../componentes/css/home.css";
-import img from "../../../imagenes/fnd.jpg";
-import logoImg from "../../../imagenes/logo.PNG";
+import img from "../../fnd.jpg";
+import logoImg from "../../logo.PNG";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
@@ -66,7 +66,7 @@ const Home = () => {
               </p>
             </div>
             <div className="hero-buttons">
-                <a href="http://wa.me/5491133785813">
+                <a href="http://wa.me/5491140373225">
               
                 {" "}
                 <button className="btn-whatsapp">PEDIR VÍA WHATSAPP</button>

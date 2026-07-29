@@ -120,7 +120,7 @@ const Pedidos = () => {
           </div>
         ))}
       </div>
-  <a href="http://wa.me/5491133785813">
+  <a href="http://wa.me/5491140373225">
       <button className="btn-whatsapp-cta">
         <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
           <path d="M12 2C6.47715 2 2 6.47715 2 12C2 13.8214 2.48697 15.5291 3.33782 17L2 22L7.12963 20.6942C8.55927 21.5219 10.2237 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" />
