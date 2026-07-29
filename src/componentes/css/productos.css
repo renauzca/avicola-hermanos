@@ -1,0 +1,109 @@
+.productos-destacados {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.eyebrow {
+  color: #C9962F;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.titulo-seccion {
+  color: #2D3B27;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.subtitulo-seccion {
+  color: #555;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+/* Carrusel */
+.carrusel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carrusel-viewport {
+  flex: 1;
+  overflow: hidden;
+}
+
+.carrusel-track {
+  display: flex;
+  gap: 24px;
+}
+
+/* Card normal (chica) */
+.card-slot {
+  flex: 0 0 clamp(200px, 20vw, 280px); 
+  transform: scale(0.9) translateY(20px);
+  opacity: 0.85;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Card activa (grande, centrada) */
+.card-slot-activo {
+  transform: scale(1.08) translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Flechas */
+.flecha {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: #2D3B27;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 3;
+  flex-shrink: 0;
+}
+
+.flecha-izq {
+  margin-right: -22px;
+}
+
+.flecha-der {
+  margin-left: -22px;
+  background-color: #C9962F;
+}
+
+/*Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9CBB0;
+  cursor: pointer;
+}
+
+.dot-activo {
+  background-color: #C9962F;
+  width: 24px;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .titulo-seccion {
+    font-size: 1.8rem;
+  }
+}
