@@ -2,6 +2,9 @@
   background-color: #F3EEE1;
   text-align: center;
   padding: 60px 40px;
+  overflow-x: hidden; /* NUEVO */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .como-titulo {
@@ -17,7 +20,7 @@
   margin-bottom: 40px;
 }
 
-/*Grid de pasos  */
+/* ===== Grid de pasos ===== */
 .pasos-grid {
   display: flex;
   justify-content: center;
@@ -67,7 +70,7 @@
   line-height: 1.5;
 }
 
-/*  Botón CTA */
+/* ===== Botón CTA ===== */
 .btn-whatsapp-cta {
   display: inline-flex;
   align-items: center;
@@ -88,7 +91,7 @@
   background-color: #1e2a19;
 }
 
-/* Responsive*/
+/* ===== Responsive ===== */
 @media (max-width: 900px) {
   .pasos-grid {
     flex-direction: column;

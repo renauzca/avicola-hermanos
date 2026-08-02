@@ -6,14 +6,14 @@
 
 .container {
   background: linear-gradient(135deg, #faf3e4 0%, #f3e8d0 100%);
-  height: 100dvh;
+  min-height: 100dvh;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden; /* bloquea SOLO el scroll horizontal */
   display: flex;
   flex-direction: column;
 }
 
-/*  Navbar */
+/* ===== Navbar ===== */
 .navbar {
   flex-shrink: 0;
   display: flex;
@@ -40,46 +40,40 @@
   text-decoration: none;
 }
 
-/*main */
+/* ===== main ===== */
 main {
   flex: 1;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 0;
 }
 
-/*Hero section */
+/* ===== Hero section ===== */
 .hero {
-  padding: 20px 60px 10px;
+  padding: 40px 60px 20px;
   flex: 1;
-  min-height: 0;
   display: flex;
   flex-direction: column;
 }
 
 .hero-content {
   flex: 1;
-  min-height: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centra todo el bloque si sobra espacio vertical */
-  gap: 24px; /* reemplaza el margin-top suelto que tenía la imagen */
-  overflow: hidden;
+  gap: 24px;
 }
 
-/* Fila de arriba: título + stats, uno al lado del otro, tamaños intactos */
+/* Fila de arriba: título + stats */
 .hero-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
-  flex-shrink: 0;
 }
 
 .hero-title {
-  line-height: 0.95;
+  line-height: 1.05; /* antes 0.95, corrige el recorte del título */
+  padding-top: 8px;
 }
 
 .hero-title h1 {
@@ -113,27 +107,23 @@ main {
   font-weight: 600;
 }
 
-/* Imagen: ya no se estira a llenar el espacio sobrante */
+/* Imagen */
 .hero-image {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex: none;
 }
 
 .hero-image img {
   max-width: 700px;
   width: 100%;
   height: auto;
-  max-height: 45vh;
-  object-fit: cover;
   border-radius: 12px;
 }
 
-/* CTA sectio */
+/* ===== CTA section ===== */
 .cta-section {
-  padding: 0 60px 20px;
-  flex-shrink: 0;
+  padding: 20px 60px 60px;
 }
 
 .cta-content {
@@ -185,7 +175,7 @@ main {
   background-color: rgba(201, 150, 47, 0.1);
 }
 
-/* Responsive (por ancho)  */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .navbar {
     padding: 16px 24px;
@@ -194,7 +184,7 @@ main {
   }
 
   .hero {
-    padding: 16px 24px 10px;
+    padding: 24px 24px 10px;
   }
 
   .hero-title h1 {
@@ -212,7 +202,7 @@ main {
   }
 
   .cta-section {
-    padding: 0 24px 16px;
+    padding: 10px 24px 40px;
   }
 
   .hero-description p {
@@ -221,79 +211,5 @@ main {
 
   .hero-buttons {
     justify-content: center;
-  }
-
-  .hero-content {
-    gap: 16px;
-  }
-
-  .hero-image {
-    flex: none;
-    height: 30vh;
-    min-height: 160px;
-    width: 100%;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: 100%;
-    max-height: none;
-    object-fit: cover;
-    object-position: center;
-  }
-}
-
-/*Responsive (por altura)*/
-@media (max-height: 700px) {
-  .navbar {
-    padding: 12px 24px;
-  }
-
-  .hero-content {
-    gap: 10px;
-  }
-
-  .hero-top {
-    gap: 8px;
-  }
-
-  .hero-title h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-stats {
-    gap: 8px;
-  }
-
-  .hero-stats .stat h3 {
-    font-size: 1.1rem;
-  }
-
-  .hero-stats .stat span {
-    font-size: 0.75rem;
-  }
-
-  .hero-image {
-    height: 22vh;
-    min-height: 110px;
-  }
-
-  .hero-description p {
-    font-size: 0.85rem;
-    line-height: 1.4;
-  }
-
-  .cta-content {
-    gap: 8px;
-  }
-
-  .cta-section {
-    padding: 0 24px 12px;
-  }
-
-  .btn-whatsapp,
-  .btn-productos {
-    padding: 10px 20px;
-    font-size: 0.85rem;
   }
 }
