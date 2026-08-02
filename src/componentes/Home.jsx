@@ -5,31 +5,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="container">
-      <nav className="navbar">
-        <Link to="/">
-          <div className="navbar-logo">
-            <img src={logoImg} alt="Granja & Corral" />
-          </div>
-        </Link>
-
-        <Link to="/productos">
-          <div>
-            <h2>Productos</h2>
-          </div>
-        </Link>
-
-        <Link to="/entregas">
-          <div>
-            <h2>Entregas</h2>
-          </div>
-        </Link>
-
-        <Link to="/pedidos">
-          <div>
-            <h2>Pedidos</h2>
-          </div>
-        </Link>
-      </nav>
       <main>
         <section className="hero">
           <div className="hero-content">
@@ -66,12 +41,10 @@ const Home = () => {
               </p>
             </div>
             <div className="hero-buttons">
-                <a href="http://wa.me/5491140373225">
-              
+              <a href="http://wa.me/5491140373225">
                 {" "}
                 <button className="btn-whatsapp">PEDIR VÍA WHATSAPP</button>
-           
-                </a>
+              </a>
               <Link to="/productos">
                 {" "}
                 <button className="btn-productos">VER PRODUCTOS</button>
