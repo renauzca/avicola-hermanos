@@ -1,4 +1,4 @@
-import imgMap from '../../mapadef.png'
+import imgMap from '../componentes/imagenes/mapadef.png'
 import './css/entregas.css'
 
 const Entregas = () => {

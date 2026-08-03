@@ -1,32 +1,37 @@
-import './css/cardProducto.css'
+import "./css/cardProducto.css";
 
-const CardProducto = (producto)=>{
-    return(
-        <div className="containerCard">
-            <div className="card-image-wrapper"><div className="card-image">imagen</div></div>
-            <div className="card-info">
-                <div><h3 className="card-title">{producto.titulo}</h3></div>
-                <div><p className="card-description">{producto.descripcion} </p></div>
-            </div>
-
-        
-            <div className="card-extra-info">
-                <h4 className="extra-titulo">{producto.titulo}</h4>
-                <div className="extra-item">
-                    <span className="extra-label">Origen</span>
-                    <span className="extra-valor">{producto.origen}</span>
-                </div>
-                <div className="extra-item">
-                    <span className="extra-label">Peso aprox.</span>
-                    <span className="extra-valor">{producto.peso}</span>
-                </div>
-                <div className="extra-item">
-                    <span className="extra-label">Proteínas</span>
-                    <span className="extra-valor">{producto.proteinas}</span>
-                </div>
-            </div>
+const CardProducto = (producto) => {
+  return (
+    <div className="containerCard">
+      <div className="card-image-wrapper">
+        <div className="card-image"><img src={producto.img} alt="" /></div>
+      </div>
+      <div className="card-info">
+        <div>
+          <h3 className="card-title">{producto.titulo}</h3>
         </div>
-    )
-}
+        <div>
+          <p className="card-description">{producto.descripcion} </p>
+        </div>
+      </div>
+
+      <div className="card-extra-info">
+        <h4 className="extra-titulo">{producto.titulo}</h4>
+        <div className="extra-item">
+          <span className="extra-label">Origen</span>
+          <span className="extra-valor">{producto.origen}</span>
+        </div>
+        <div className="extra-item">
+          <span className="extra-label">Peso aprox.</span>
+          <span className="extra-valor">{producto.peso}</span>
+        </div>
+        <div className="extra-item">
+          <span className="extra-label">Proteínas</span>
+          <span className="extra-valor">{producto.proteinas}</span>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default CardProducto;
