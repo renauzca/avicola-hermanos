@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import imgMap from '../componentes/imagenes/mapadef.png'
 import './css/entregas.css'
 
@@ -39,8 +40,12 @@ const Entregas = () => {
       </div>
 
       <div className="entregas-botones">
+        <a href="http://wa.me/5491140373225">
         <button className="btn-whatsapp">Consultar Reparto Vía WhatsApp</button>
-        <button className="btn-productos">Ver Productos y Precios</button>
+        </a>
+       <Link to="/productos">
+       <button className="btn-productos">Ver Productos y Precios</button>
+       </Link> 
       </div>
     </div>
   );

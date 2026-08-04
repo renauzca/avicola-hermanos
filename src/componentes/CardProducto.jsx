@@ -17,17 +17,17 @@ const CardProducto = (producto) => {
 
       <div className="card-extra-info">
         <h4 className="extra-titulo">{producto.titulo}</h4>
-        <div className="extra-item">
+        {/* <div className="extra-item">
           <span className="extra-label">Origen</span>
           <span className="extra-valor">{producto.origen}</span>
-        </div>
+        </div> */}
         <div className="extra-item">
-          <span className="extra-label">Peso aprox.</span>
+          <span className="extra-label">Peso:</span>
           <span className="extra-valor">{producto.peso}</span>
         </div>
         <div className="extra-item">
-          <span className="extra-label">Proteínas</span>
-          <span className="extra-valor">{producto.proteinas}</span>
+          <span className="extra-label">Calibres:</span>
+          <span className="extra-valor">{producto.tamano}</span>
         </div>
       </div>
     </div>

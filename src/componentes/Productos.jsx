@@ -24,44 +24,54 @@ const Productos = () => {
         titulo: "Pollo Fadel",
         descripcion: "Pollo entero, refrigerado con menudos.",
         precio: "X/kg",
-        img: fadelImg
+        img: fadelImg,
+        tamano: "x7, x8",
+        peso: ' Cajas de 20kg'
       },
       {
         id: 2,
         titulo: "Pollo Soychu",
         descripcion: "Pollo entero, refrigerado con menudos.",
         precio: "X/kg",
-        img: soychuImg
+        img: soychuImg,
+        tamano: "x7, x8, x9",
+        peso: ' Cajas de 20kg'
       },
       {
         id: 3,
         titulo: "Pollo Ginosa",
         descripcion: "Pollo entero, refrigerado con menudos.",
         precio: "X/kg",
-        img: ginosaImg
+        img: ginosaImg, 
+        tamano: "x6, x7",
+        peso: ' Cajas de 20kg'
       },
       {
         id: 4,
         titulo: "Pollo Bonnin",
         descripcion: "Pollo entero, refrigerado con menudos.",
         precio: "X/kg",
-        img: boninImg
+        img: boninImg,
+        tamano: "x6, x7",
+        peso: ' Cajas de 20kg'
       },
       {
         id: 5,
         titulo: "Pechugas S/P S/H IQF",
         descripcion:
-          "Suprema congelada entera sin hueso ni piel, jugosa y libre de grasa, lista para cualquier receta.",
+          "Suprema congelada entera sin hueso ni piel, jugosa y libre de grasa, lista para cualquier receta.Envasada en bolson de polietileno",
         precio: "X/kg",
-        img: supfadelImg
+        img: supfadelImg,
+        tamano: "5kg, 10kg, 15kg"
       },
       {
         id: 6,
         titulo: "Pechugas S/P S/H",
         descripcion:
-          "Suprema fresca entera sin hueso ni piel, jugosa y libre de grasa, lista para cualquier receta.",
+          "Suprema fresca entera sin hueso ni piel, jugosa y libre de grasa, lista para cualquier receta. Envasada en bolson de polietileno",
         precio: "X/kg",
-        img: supsoychuImg
+        img: supsoychuImg, 
+        tamano: "5kg, 10kg, 15kg, 20kg"
       },
     ]);
   }, []);
